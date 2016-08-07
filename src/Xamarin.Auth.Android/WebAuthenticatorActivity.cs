@@ -162,7 +162,7 @@ namespace Xamarin.Auth
 				return false;
 			}
 
-			public override void OnPageStarted (WebView view, string url, Android.Graphics.Bitmap favicon)
+			public override void OnPageStarted (WebView view, string url, global::Android.Graphics.Bitmap favicon)
 			{
 				var uri = new Uri (url);
 				activity.state.Authenticator.OnPageLoading (uri);
@@ -233,7 +233,7 @@ namespace Xamarin.Auth
 
 				AlertDialog.Builder builder = new AlertDialog.Builder (this.activity);
 				builder.SetTitle ("Security warning");
-				builder.SetIcon (Android.Resource.Drawable.IcDialogAlert);
+				builder.SetIcon (global::Android.Resource.Drawable.IcDialogAlert);
 				builder.SetMessage ("There are problems with the security certificate for this site.");
 				
 				builder.SetNegativeButton ("Go back", (sender, args) => {

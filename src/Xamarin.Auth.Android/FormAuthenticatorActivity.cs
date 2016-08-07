@@ -231,7 +231,7 @@ namespace Xamarin.Auth
 
 		void HandleCreateAccount (object sender, EventArgs e)
 		{
-			var intent = new Intent (Intent.ActionView, Android.Net.Uri.Parse (state.Authenticator.CreateAccountLink.AbsoluteUri));
+			var intent = new Intent (Intent.ActionView, global::Android.Net.Uri.Parse (state.Authenticator.CreateAccountLink.AbsoluteUri));
 			StartActivity (intent);
 		}
 

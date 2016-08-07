@@ -41,7 +41,7 @@ namespace Xamarin.Auth
 		/// <summary>
 		/// Create an account store.
 		/// </summary>
-		public static AccountStore Create (Android.Content.Context context)
+		public static AccountStore Create (global::Android.Content.Context context)
 		{
 			return new AndroidAccountStore (context);
 		}

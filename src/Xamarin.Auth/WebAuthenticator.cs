@@ -106,8 +106,8 @@ namespace Xamarin.Auth
 				store.DeleteCookie (c);
 			}
 #elif PLATFORM_ANDROID
-			Android.Webkit.CookieSyncManager.CreateInstance (Android.App.Application.Context);
-			Android.Webkit.CookieManager.Instance.RemoveAllCookie ();
+			global::Android.Webkit.CookieSyncManager.CreateInstance (global::Android.App.Application.Context);
+			global::Android.Webkit.CookieManager.Instance.RemoveAllCookie ();
 #endif
 		}
 
